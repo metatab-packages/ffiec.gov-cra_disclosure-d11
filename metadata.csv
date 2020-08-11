@@ -1,34 +1,34 @@
 Declare,metatab-latest
-Title,Community Reinvestment Act Disclosure Files
-Description,Multi-year CRA disclosures for small business originations.
+Title,"Community Reinvestment Act Disclosure Files, 2010 to 2018"
+Description,"Multi-year CRA disclosures for small business originations, per county, year and bank."
 Identifier,738707dc-8cf5-44e9-b469-d4016abf9648
-Name,ffiec.gov-cra_disclosure_smb-2010_2015-orig-2.1.1
+Name,ffiec.gov-cra_disclosure_smb-2.1.1
 Dataset,cra_disclosure_smb
 Origin,ffiec.gov
-Time,2010-2015
-Grain,orig
+Time,
+Grain,
 Version,2.1.1
 Version.Major,2
 Version.Minor,1
 Version.Patch,1
 Group,projects
 Tag,mdf-lending
-,
-,
-,
-,
-,
-,
-,
+Modified,2020-08-11T21:06:53
 Giturl,https://github.com/sandiegodata/data-projects.git
 
 Section,Contacts,Email,Organization,Url,
 Wrangler,Eric Busboom,eric@sandiegodata.org,San Diego Regional Data Library,http://sandiegodata.org,
 
 Section,Documentation,Title,Description,,
-Includedocumentation,documentation.md,Main documentation,,,
+Documentation,README.md,Main documentation,,,
+Homepage,https://www.ffiec.gov/cra/craproducts.htm,CRA Data Products,,,
+Downloadpage,https://www.ffiec.gov/cra/craflatfiles.htm,Aggregate & Disclosure Flat Files,Links to download the files.,,
+Documentation,https://www.ffiec.gov/cra/pdf/17FlatDiscSpecs.pdf,Disclosure File Specifications,File specifications for the 2017 Disclosure Flat File,,
 
 Section,References,Name,,,
+Reference,https://www.ffiec.gov/cra/xls/18exp_discl.zip,discl_18,,,
+Reference,https://www.ffiec.gov/cra/xls/17exp_discl.zip,discl_17,,,
+Reference,https://www.ffiec.gov/cra/xls/16exp_discl.zip,discl_16,,,
 Reference,https://www.ffiec.gov/cra/xls/15exp_discl.zip,discl_15,,,
 Reference,https://www.ffiec.gov/cra/xls/14exp_discl.zip,discl_14,,,
 Reference,https://www.ffiec.gov/cra/xls/13exp_discl.zip,discl_13,,,
@@ -126,23 +126,13 @@ Assessment Area (AA)
   60= Total Outside AA in County 
 Right justified with leading zeros 
 or blank if not a total",
-Table.Column,num_orig_bus_lt100k,integer,10,Right justified with leading zeros,
-Table.Column,tot_orig_bus_lt100k,integer,10,"Amount is in thousands {e.g. 00000025 
-indicates $25,000); Right justified with 
-leading zeros",
-Table.Column,num_orig_bus_lt250k,integer,10,Right justified with leading zeros,
-Table.Column,tot_orig_bus_gt100k_lt250k,integer,10,"Amount is in thousands {e.g. 00000125 
-indicates $125,000); Right justified with 
-leading zeros",
-Table.Column,num_orig_bus_gt250k_lt1m,integer,10,Right justified with leading zeros,
-Table.Column,tot_orig_bus_gt250k_lt1m,integer,10,"Amount is in thousands {e.g. 00000300 
-indicates $300,000); Right justified with 
-leading zeros",
-Table.Column,num_orig_bus_lt1m,integer,10,Right justified with leading zeros,
-Table.Column,tot_orig_bus_lt1m,integer,10,"Amount is in thousands {e.g. 00000025 
-indicates $25,000); Right justified with 
-leading zeros",
-Table.Column,num_orig_bus_al,integer,10,Right justified with leading zeros,
-Table.Column,tot_orig_bus_al,integer,10,"Amount is in thousands {e.g. 00000025 
-indicates $25,000); Right justified with 
-leading zeros",
+Table.Column,num_orig_bus_lt100k,integer,10,Number of loans less than $100K,
+Table.Column,tot_orig_bus_lt100k,integer,10,"Total value of loans, in thousands",
+Table.Column,num_orig_bus_lt250k,integer,10,"Number of loans less than $250K, more than $100K",
+Table.Column,tot_orig_bus_gt100k_lt250k,integer,10,"Total value of loans, in thousands",
+Table.Column,num_orig_bus_gt250k_lt1m,integer,10,"Number of loans, less than $1M, more than $250K",
+Table.Column,tot_orig_bus_gt250k_lt1m,integer,10,"Total value of loans, in thousands",
+Table.Column,num_orig_bus_lt1m,integer,10,Number of loans to businesses with gross revenues of less than $1m,
+Table.Column,tot_orig_bus_lt1m,integer,10,"Total value of loans, in thousands",
+Table.Column,num_orig_bus_al,integer,10,Number of affiliate loans,
+Table.Column,tot_orig_bus_al,integer,10,"Total value of loans, in thousands",
