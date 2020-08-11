@@ -1,30 +1,32 @@
 Declare,metatab-latest
 Title,"Community Reinvestment Act Disclosure Files, 2010 to 2018"
-Description,"Multi-year CRA disclosures for small business originations, per county, year and bank."
+Description,"Multi-year CRA disclosures for small business originations, per county, year and"
+Description,bank.
 Identifier,738707dc-8cf5-44e9-b469-d4016abf9648
-Name,ffiec.gov-cra_disclosure_smb-2.1.1
-Dataset,cra_disclosure_smb
+Name,ffiec.gov-cra_disclosure-d11-2.1.1
+Dataset,cra_disclosure
 Origin,ffiec.gov
 Time,
 Grain,
+Variant,d11
 Version,2.1.1
 Version.Major,2
 Version.Minor,1
 Version.Patch,1
 Group,projects
 Tag,mdf-lending
-Modified,2020-08-11T21:06:53
+Modified,2020-08-11T22:00:10
 Giturl,https://github.com/sandiegodata/data-projects.git
-
+""
 Section,Contacts,Email,Organization,Url,
 Wrangler,Eric Busboom,eric@sandiegodata.org,San Diego Regional Data Library,http://sandiegodata.org,
-
+""
 Section,Documentation,Title,Description,,
 Documentation,README.md,Main documentation,,,
 Homepage,https://www.ffiec.gov/cra/craproducts.htm,CRA Data Products,,,
 Downloadpage,https://www.ffiec.gov/cra/craflatfiles.htm,Aggregate & Disclosure Flat Files,Links to download the files.,,
 Documentation,https://www.ffiec.gov/cra/pdf/17FlatDiscSpecs.pdf,Disclosure File Specifications,File specifications for the 2017 Disclosure Flat File,,
-
+""
 Section,References,Name,,,
 Reference,https://www.ffiec.gov/cra/xls/18exp_discl.zip,discl_18,,,
 Reference,https://www.ffiec.gov/cra/xls/17exp_discl.zip,discl_17,,,
@@ -35,10 +37,10 @@ Reference,https://www.ffiec.gov/cra/xls/13exp_discl.zip,discl_13,,,
 Reference,https://www.ffiec.gov/cra/xls/12exp_discl.zip,discl_12,,,
 Reference,https://www.ffiec.gov/cra/xls/11exp_discl.zip,discl_11,,,
 Reference,https://www.ffiec.gov/cra/xls/10exp_discl.zip,discl_10,,,
-
+""
 Section,Resources,Name,Schema,Prefix,Description
 Datafile,python:pylib#extract,sb_loan_orig,cra_disclosure,D1-1,"Table D1-1, small business disclosure records, for years 2010 to 2015 inclusive"
-
+""
 Section,Schema,DataType,Width,Description,
 Table,cra_disclosure,,,,
 Table.Column,table_id,text,5,Value is D1-1,
