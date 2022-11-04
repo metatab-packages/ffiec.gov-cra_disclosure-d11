@@ -3,19 +3,19 @@ Title,"Community Reinvestment Act Disclosure Files, 2010 to 2020"
 Description,"Multi-year CRA disclosures for small business originations, per county, year and"
 Description,bank.
 Identifier,738707dc-8cf5-44e9-b469-d4016abf9648
-Name,ffiec.gov-cra_disclosure-d11-2.2.1
+Name,ffiec.gov-cra_disclosure-d11-2.2.2
 Dataset,cra_disclosure
 Origin,ffiec.gov
 Time,
 Grain,
 Variant,d11
-Version,2.2.1
+Version,2.2.2
 Version.Major,2
 Version.Minor,2
 Version.Patch,2
 Group,projects
 Tag,mdf-lending
-Modified,2022-01-12T18:41:32
+Modified,2022-01-12T23:43:32
 Giturl,https://github.com/sandiegodata/data-projects.git
 ""
 Section,Contacts,Email,Organization,Url,
